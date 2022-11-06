@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ozzy's Quiz</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body>
+
+    <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <a class="header item" href="index.html">Ozzy's Quiz</a>
+            </div>
+        </div>
+
+        <!-- Landing Page for Quiz -->
+        <div id="landingPage" class="ui text container">
+            <h1 class="ui inverted header">Ozzy's Spectacular Quiz</h1>
+            <h2>Are you ready for the ultimate quiz?</h2>
+            <div class="ui huge primary button" id="signUpButton">Sign Up <i class="right arrow icon"></i></div>
+        </div>
+
+        <!-- Greeting Page + Start Quiz Button -->
+        <div id="quizStartPage">
+            <div class="ui inverted large header">
+                <h2 id="welcomeMessage"></h2>
+                <span id="startQuizButton" class="ui huge primary button">Start Quiz<i class="right arrow icon"></i></span>
+            </div>
+        </div>
+
+        <!-- Results Page + Try Again Button -->
+        <div id="quizEndPage">
+            <div class="ui inverted large header">
+                <h2 id="result"></h2>
+                <h2 id="rank"></h2>
+                <div class="ui huge primary button" id="tryAgain"><i class="left arrow icon"></i> Try Again </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- UI Modal that prompts for username -->
+    <div class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">Enter Username</div>
+        <div class="ui container">
+            <p id="date"></p>
+        </div>
+            <div class="content">
+                <div class="ui fluid input">
+                    <input id="usernameInput" type="text" placeholder="JohnDoe123">
+                </div>
+            </div>
+        <div class="actions">
+            <div id="signUpContinue" class="ui postive approve right labeled icon button">Continue<i class="checkmark icon"></i></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    </body>
+</html>

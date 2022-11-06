@@ -1,0 +1,25 @@
+body {
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.ui.large.form > .field:first-child {
+margin-bottom: 0;
+}
+
+.ui.masthead {
+    margin-top: 40px !important; 
+    height: 100%;
+}
+
+#quizStartPage {
+    display: none;
+}
+
+#quizEndPage {
+    display: none;
+}
+
+p {
+    margin-left: 21px;
+}
